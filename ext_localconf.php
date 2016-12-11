@@ -47,6 +47,12 @@ if (TYPO3_MODE === 'BE') {
                 ['source' => 'EXT:' . $extKey . '/Resources/Public/Icons/content-t3additions-cookienotice.svg']
             );
 
+            $iconRegistry->registerIcon(
+                't3additions-domain-model-marker',
+                \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
+                ['source' => 'EXT:' . $extKey . '/Resources/Public/Icons/t3additions-domain-model-marker.svg']
+            );
+
             // Add TypoScript config
             \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:t3additions/Configuration/TSconfig/ContentElementWizard.txt">');
             \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:t3additions/Configuration/TSconfig/ContentLayouts.txt">');

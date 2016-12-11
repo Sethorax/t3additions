@@ -27,7 +27,7 @@ return [
             'disabled' => 'hidden',
         ],
         'typeicon_classes' => [
-            'default' => 'ext-news-link'
+            'default' => 't3additions-domain-model-marker'
         ],
         'hideTable' => true,
     ],
