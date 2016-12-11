@@ -1,0 +1,70 @@
+lib.fluidContent {
+    templateRootPaths {
+        570 = EXT:t3additions/Resources/Private/Templates/
+    }
+
+    partialRootPaths {
+        570 = EXT:t3additions/Resources/Private/Partials/
+    }
+
+    layoutRootPaths {
+        570 = EXT:t3additions/Resources/Private/Layouts/
+    }
+}
+
+tt_content {
+    t3additions_menu =< lib.fluidContent
+    t3additions_menu {
+        templateName = Menu
+    }
+
+    t3additions_map =< lib.fluidContent
+    t3additions_map {
+        templateName = Map
+        dataProcessing {
+            1 = Sethorax\T3additions\DataProcessing\MapProcessor
+        }
+    }
+
+    t3additions_socialwall =< lib.fluidContent
+    t3additions_socialwall {
+        templateName = Socialwall
+    }
+
+    t3additions_button =< lib.fluidContent
+    t3additions_button {
+        templateName = Button
+    }
+
+    t3additions_cookienotice =< lib.fluidContent
+    t3additions_cookienotice {
+        templateName = Cookienotice
+    }
+}
+
+
+
+
+
+# Ajax config
+
+t3additionsMapAjax = PAGE
+t3additionsMapAjax {
+    typeNum = 5711
+
+    10 = RECORDS
+    10 {
+        tables = tt_content
+        source.stdWrap.data = GP:uid
+        dontCheckPid = 1
+    }
+
+    config {
+        disableAllHeaderCode = 1
+        additionalHeaders = Content-type: application/json, utf-8
+
+        xhtml_cleaning = 0
+        admPanel = 0
+        debug = 0
+    }
+}

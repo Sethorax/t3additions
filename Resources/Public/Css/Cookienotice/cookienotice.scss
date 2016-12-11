@@ -1,0 +1,25 @@
+$bg-color: lightgray;
+$font-color: black;
+$link-color: orange;
+$button-color: gray;
+$button-font-color: white;
+
+.t3additions-cookienotice.cookienotice-layout-default {position: fixed; bottom: 0; left: 0; width: 100%; padding: 20px 30px; background-color: $bg-color; box-sizing: border-box; z-index: 44; transform: translateY(100%); transition: transform .5s ease-out;
+    &.state-visible {transform: translateY(0%);
+        &.state-accepted {transform: translateY(100%);}
+    }
+
+    .inner,
+    .cta-container {display: flex; align-items: center;}
+    .inner {width: 100%;}
+    .message-container {flex-grow: 1;
+        a {color: $link-color; text-decoration: none;}
+    }
+    .cta-container {
+        > div {background-color: $button-color; cursor: pointer;
+            a {color: $button-font-color; text-decoration: none;}
+            .label {display: inline-block; padding: 10px; color: $button-font-color;}
+        }
+        .cta-more-info {margin-right: 10px;}
+    }
+}

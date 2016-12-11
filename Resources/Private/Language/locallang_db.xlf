@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
+    <file source-language="en" datatype="plaintext" original="messages" product-name="t3additions">
+        <header/>
+        <body>
+            <!-- Content Element Wizard -->
+            <trans-unit id="ce_wizard.header">
+                <source>Additions</source>
+            </trans-unit>
+
+            <trans-unit id="ce_wizard.menu.title">
+                <source>Menu</source>
+            </trans-unit>
+            <trans-unit id="ce_wizard.menu.description">
+                <source>Creates a flexible configurable menu.</source>
+            </trans-unit>
+            <trans-unit id="ce_wizard.map.title">
+                <source>Map</source>
+            </trans-unit>
+            <trans-unit id="ce_wizard.map.description">
+                <source>Creates a flexible configurable map.</source>
+            </trans-unit>
+            <trans-unit id="ce_wizard.socialwall.title">
+                <source>Social Wall</source>
+            </trans-unit>
+            <trans-unit id="ce_wizard.socialwall.description">
+                <source>Creates a wall for social media posts.</source>
+            </trans-unit>
+            <trans-unit id="ce_wizard.button.title">
+                <source>Button</source>
+            </trans-unit>
+            <trans-unit id="ce_wizard.button.description">
+                <source>Creates a simple call to action button.</source>
+            </trans-unit>
+            <trans-unit id="ce_wizard.cookienotice.title">
+                <source>Cookie Notice</source>
+            </trans-unit>
+            <trans-unit id="ce_wizard.cookienotice.description">
+                <source>Creates a cookie notice.</source>
+            </trans-unit>
+
+
+            <!--
+                tt_content
+            -->
+            <!-- Tabs -->
+            <trans-unit id="tt_content.tabs.map.marker">
+                <source>Marker</source>
+            </trans-unit>
+            <trans-unit id="tt_content.tabs.map.advanced">
+                <source>Advanced</source>
+            </trans-unit>
+
+            <trans-unit id="tt_content.tabs.socialwall.facebook">
+                <source>Facebook</source>
+            </trans-unit>
+
+            <!-- Palettes -->
+            <trans-unit id="tt_content.palettes.menu.general">
+                <source>Menu</source>
+            </trans-unit>
+            <trans-unit id="tt_content.palettes.map.general">
+                <source>Map</source>
+            </trans-unit>
+            <trans-unit id="tt_content.palettes.socialwall.general">
+                <source>Social Wall</source>
+            </trans-unit>
+            <trans-unit id="tt_content.palettes.button.general">
+                <source>Button</source>
+            </trans-unit>
+            <trans-unit id="tt_content.palettes.cookienotice.general">
+                <source>Cookie Notice</source>
+            </trans-unit>
+
+            <!-- Fields -->
+            <trans-unit id="tt_content.fields.menu.depth">
+                <source>Depth</source>
+            </trans-unit>
+            <trans-unit id="tt_content.fields.menu.rootpage">
+                <source>Rootpage</source>
+            </trans-unit>
+            <trans-unit id="tt_content.fields.menu.showHidden">
+                <source>Show hidden pages</source>
+            </trans-unit>
+            <trans-unit id="tt_content.fields.menu.excludePages">
+                <source>Exclude pages</source>
+            </trans-unit>
+
+            <trans-unit id="tt_content.fields.map.centerLat">
+                <source>Center Latitude</source>
+            </trans-unit>
+            <trans-unit id="tt_content.fields.map.centerLng">
+                <source>Center Longitude</source>
+            </trans-unit>
+            <trans-unit id="tt_content.fields.map.zoom">
+                <source>Zoom</source>
+            </trans-unit>
+            <trans-unit id="tt_content.fields.map.fitBounds">
+                <source>Fit Bounds</source>
+            </trans-unit>
+            <trans-unit id="tt_content.fields.map.marker">
+                <source>Marker</source>
+            </trans-unit>
+            <trans-unit id="tt_content.fields.map.additionalConf">
+                <source>Additional Configuration</source>
+            </trans-unit>
+            <trans-unit id="tt_content.fields.map.styles">
+                <source>Styles</source>
+            </trans-unit>
+
+            <trans-unit id="tt_content.fields.socialwall.length">
+                <source>Length</source>
+            </trans-unit>
+            <trans-unit id="tt_content.fields.socialwall.showMedia">
+                <source>Show Media</source>
+            </trans-unit>
+            <trans-unit id="tt_content.fields.socialwall.facebook_accounts">
+                <source>Accounts</source>
+            </trans-unit>
+            <trans-unit id="tt_content.fields.socialwall.facebook_limit">
+                <source>Limit</source>
+            </trans-unit>
+            <trans-unit id="tt_content.fields.socialwall.facebook_accessToken">
+                <source>Access Token</source>
+            </trans-unit>
+
+            <trans-unit id="tt_content.fields.button.label">
+                <source>Label</source>
+            </trans-unit>
+            <trans-unit id="tt_content.fields.button.link">
+                <source>Link</source>
+            </trans-unit>
+
+            <trans-unit id="tt_content.fields.cookienotice.message">
+                <source>Message</source>
+            </trans-unit>
+            <trans-unit id="tt_content.fields.cookienotice.acceptLabel">
+                <source>Accept Label</source>
+            </trans-unit>
+            <trans-unit id="tt_content.fields.cookienotice.moreInfoLabel">
+                <source>More Info Label</source>
+            </trans-unit>
+            <trans-unit id="tt_content.fields.cookienotice.showMoreInfo">
+                <source>Show More Info Button</source>
+            </trans-unit>
+            <trans-unit id="tt_content.fields.cookienotice.link">
+                <source>More Info Link</source>
+            </trans-unit>
+
+
+            <!--
+                Marker
+            -->
+            <trans-unit id="marker.title">
+                <source>Marker</source>
+            </trans-unit>
+            <trans-unit id="marker.description">
+                <source>A Marker for Google Maps.</source>
+            </trans-unit>
+            <trans-unit id="marker.field.title">
+                <source>Title</source>
+            </trans-unit>
+            <trans-unit id="marker.field.lat">
+                <source>Latitude</source>
+            </trans-unit>
+            <trans-unit id="marker.field.lng">
+                <source>Longitude</source>
+            </trans-unit>
+            <trans-unit id="marker.field.uri">
+                <source>Link</source>
+            </trans-unit>
+            <trans-unit id="marker.field.uriTitle">
+                <source>Link title</source>
+            </trans-unit>
+            <trans-unit id="marker.field.icon">
+                <source>Icon</source>
+            </trans-unit>
+            <trans-unit id="marker.field.description">
+                <source>Description</source>
+            </trans-unit>
+            <trans-unit id="marker.falMedia.add">
+                <source>Add icon</source>
+            </trans-unit>
+
+            <!--
+                Sys File Reference
+            -->
+            <trans-unit id="sys_file_reference.map.normalWidth">
+                <source>Width</source>
+            </trans-unit>
+            <trans-unit id="sys_file_reference.map.normalHeight">
+                <source>Height</source>
+            </trans-unit>
+            <trans-unit id="sys_file_reference.map.scaledWidth">
+                <source>Scaled width</source>
+            </trans-unit>
+            <trans-unit id="sys_file_reference.map.scaledHeight">
+                <source>Scaled height</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

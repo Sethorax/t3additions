@@ -1,0 +1,38 @@
+{namespace a=Sethorax\T3additions\ViewHelpers}
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:a="http.//typo3.org/ns/Sethorax/T3additions/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<f:layout name="Default" />
+
+
+<!-- Renders a default menu with ul>li strucutre -->
+<f:section name="default">
+    <f:cObject typoscriptObjectPath="lib.t3a.test" />
+    <div class="t3additions-menu menu-layout-default">
+        <nav class="menu-default">
+            <f:render partial="Menu/Default" arguments="{current: 1, menuData: data, menuRootpage: data.t3additions_menu_rootpage}" />
+        </nav>
+    </div>
+</f:section>
+
+
+<!-- Renders a offcanvas mobile menu -->
+<f:section name="mobile">
+    <a:includeJSLib name="jQuery" uri="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" />
+
+    <a:includeRelFile file="Resources/Public/JavaScript/Menu/mobile-menu.js" type="js" />
+    <a:includeRelFile file="Resources/Public/Css/Menu/menu.css" type="css" />
+
+    <div class="t3additions-menu menu-layout-mobile">
+        <nav class="menu-mobile">
+            <div class="menu-inner">
+                <!-- ToDo: Pre-Menu Items -->
+                <f:render partial="Menu/Mobile" arguments="{current: 1, menuData: data, menuRootpage: data.t3additions_menu_rootpage}" />
+                <!-- ToDo: Post-Menu Items -->
+            </div>
+        </nav>
+    </div>
+</f:section>
+
+</html>

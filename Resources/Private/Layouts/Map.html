@@ -1,0 +1,16 @@
+{namespace a=Sethorax\T3additions\ViewHelpers}
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<f:if condition="{a:utility.readGetParameter(param: 'type')} == '5711'">
+    <f:then><f:render section="configJson" /></f:then>
+    <f:else>
+        <f:switch expression="{data.layout}">
+            <f:case value="211"><f:render section="default" /></f:case>
+
+            <f:case default="TRUE"><f:render section="default" /></f:case>
+        </f:switch>
+    </f:else>
+</f:if>
+
+</html>

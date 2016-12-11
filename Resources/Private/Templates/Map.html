@@ -1,0 +1,23 @@
+{namespace a=Sethorax\T3additions\ViewHelpers}
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:a="http.//typo3.org/ns/Sethorax/T3additions/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<f:layout name="Map" />
+
+
+<!-- Renders a default google map -->
+<f:section name="default">
+    <a:includeJSLib name="jQuery" uri="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" />
+    <a:includeJSLib name="gMaps" uri="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlPc9OQ7mj_T8XbN3yo0jqnQKvulVnNIQ" async="true" />
+    <a:includeRelFile file="Resources/Public/JavaScript/Map/map.js" type="js" />
+
+    <div class="t3additions-map map-layout-default" data-uid="{data.uid}" style="width: 100%; height: 500px;">
+        <div class="map-container" style="width: 100%; height: 500px;"></div>
+    </div>
+</f:section>
+
+<!-- Output map config as json -->
+<f:section name="configJson"><f:format.raw>{jsonData}</f:format.raw></f:section>
+
+</html>

@@ -1,0 +1,38 @@
+{namespace v=FluidTYPO3\Vhs\ViewHelpers}
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:v="http.//typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<f:if condition="{current} < {v:math.sum(a: '{menuData.t3additions_menu_depth}', b: 1)}">
+    <v:page.menu pageUid="{menuRootpage}" excludePages="{menuData.t3additions_menu_exclude_pages}" showHiddenInMenu="{menuData.t3additions_menu_show_hidden}" as="level">
+        <f:if condition="{level}">
+            <ul class="menu-list level{current}" data-menu-level="{current}">
+                <f:for each="{level}" as="levelItem">
+                    <li class="menu-item level{current}-item {levelItem.class}">
+                        <div class="inner">
+                            <f:link.page pageUid="{levelItem.uid}" title="{levelItem.title}">
+                                <div class="label">{levelItem.title}</div>
+                            </f:link.page>
+                            <f:if condition="{current} < {menuData.t3additions_menu_depth}">
+                                <f:if condition="{levelItem.hasSubPages}">
+                                    <div class="btn-open">
+                                        <div class="icon"></div>
+                                    </div>
+                                </f:if>
+                            </f:if>
+                        </div>
+                        <f:if condition="{current} < {menuData.t3additions_menu_depth}">
+                            <f:if condition="{levelItem.hasSubPages}">
+                                <div class="submenu">
+                                    <f:render partial="Menu/Mobile" arguments="{current: '{v:math.sum(a: \'{current}\', b: 1)}', menuData: menuData, menuRootpage: levelItem.uid}" />
+                                </div>
+                            </f:if>
+                        </f:if>
+                    </li>
+                </f:for>
+            </ul>
+        </f:if>
+    </v:page.menu>
+</f:if>
+
+</html>

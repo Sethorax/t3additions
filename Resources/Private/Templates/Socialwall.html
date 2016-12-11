@@ -1,0 +1,31 @@
+{namespace a=Sethorax\T3additions\ViewHelpers}
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:a="http.//typo3.org/ns/Sethorax/T3additions/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<f:layout name="Default" />
+
+
+<!-- Renders a default menu with ul>li strucutre -->
+<f:section name="default">
+    <a:includeJSLib name="jQuery" path="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" />
+
+    <a:includeRelFile file="Resources/Public/JavaScript/Socialwall/socialwall.js" type="js" />
+    <a:includeRelFile file="Resources/Public/JavaScript/Socialwall/socialwall-lib.js" type="js" />
+    <a:includeRelFile file="Resources/Public/Css/Socialwall/socialwall.css" type="css" />
+
+    <div class="t3additions-socialwall socialwall-layout-default"
+        data-socialwall-config="{a:convertToBase64(data: '{
+            length: \'{data.t3additions_socialwall_length}\',
+            showMedia: \'{data.t3additions_socialwall_showMedia}\',
+            facebook: {
+                accounts: \'{data.t3additions_socialwall_facebook_accounts}\',
+                limit: \'{data.t3additions_socialwall_facebook_limit}\',
+                accessToken: \'{data.t3additions_socialwall_facebook_accessToken}\'
+            }
+        }')}">
+        <div class="sw-holder"></div>
+    </div>
+</f:section>
+
+</html>

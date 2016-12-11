@@ -1,0 +1,58 @@
+mod.wizards.newContentElement.wizardItems {
+    t3additions.header = LLL:EXT:t3additions/Resources/Private/Language/locallang_db.xlf:ce_wizard.header
+}
+
+mod.wizards.newContentElement.wizardItems.t3additions {
+    elements {
+        t3additions_menu {
+            iconIdentifier = content-t3additions-menu
+            title = LLL:EXT:t3additions/Resources/Private/Language/locallang_db.xlf:ce_wizard.menu.title
+            description = LLL:EXT:t3additions/Resources/Private/Language/locallang_db.xlf:ce_wizard.menu.description
+            tt_content_defValues {
+                CType = t3additions_menu
+            }
+        }
+
+        t3additions_map {
+            iconIdentifier = content-t3additions-map
+            title = LLL:EXT:t3additions/Resources/Private/Language/locallang_db.xlf:ce_wizard.map.title
+            description = LLL:EXT:t3additions/Resources/Private/Language/locallang_db.xlf:ce_wizard.map.description
+            tt_content_defValues {
+                CType = t3additions_map
+            }
+        }
+
+        t3additions_socialwall {
+            iconIdentifier = content-t3additions-socialwall
+            title = LLL:EXT:t3additions/Resources/Private/Language/locallang_db.xlf:ce_wizard.socialwall.title
+            description = LLL:EXT:t3additions/Resources/Private/Language/locallang_db.xlf:ce_wizard.socialwall.description
+            tt_content_defValues {
+                CType = t3additions_socialwall
+            }
+        }
+
+        t3additions_button {
+            iconIdentifier = content-t3additions-button
+            title = LLL:EXT:t3additions/Resources/Private/Language/locallang_db.xlf:ce_wizard.button.title
+            description = LLL:EXT:t3additions/Resources/Private/Language/locallang_db.xlf:ce_wizard.button.description
+            tt_content_defValues {
+                CType = t3additions_button
+            }
+        }
+
+        t3additions_cookienotice {
+            iconIdentifier = content-t3additions-cookienotice
+            title = LLL:EXT:t3additions/Resources/Private/Language/locallang_db.xlf:ce_wizard.cookienotice.title
+            description = LLL:EXT:t3additions/Resources/Private/Language/locallang_db.xlf:ce_wizard.cookienotice.description
+            tt_content_defValues {
+                CType = t3additions_cookienotice
+            }
+        }
+    }
+    show := addToList(t3additions_menu)
+    show := addToList(t3additions_map)
+    show := addToList(t3additions_socialwall)
+    show := addToList(t3additions_button)
+    show := addToList(t3additions_cookienotice)
+}
+

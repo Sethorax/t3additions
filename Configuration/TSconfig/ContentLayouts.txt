@@ -1,0 +1,7 @@
+TCEFORM.tt_content.layout {
+    addItems {
+        201 = [T3A Menu] - Standard
+        202 = [T3A Menu] - Mobile
+        211 = [T3A Map] - Standard
+    }
+}

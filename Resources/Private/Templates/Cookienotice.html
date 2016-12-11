@@ -1,0 +1,35 @@
+{namespace a=Sethorax\T3additions\ViewHelpers}
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:a="http.//typo3.org/ns/Sethorax/T3additions/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<f:layout name="Default" />
+
+
+<!-- Renders a simple button -->
+<f:section name="default">
+    <a:includeRelFile file="Resources/Public/JavaScript/Cookienotice/cookienotice.js" type="js" />
+    <a:includeRelFile file="Resources/Public/Css/Cookienotice/cookienotice.css" type="css" />
+
+    <div id="t3additions-cookienotice" class="t3additions-cookienotice cookienotice-layout-default">
+        <div class="inner">
+            <div class="message-container">
+                <span class="label"><a:format.stripHtmlTags html="{data.t3additions_cookienotice_message}" tagWhitelist="<a></a>" /></span>
+            </div>
+            <div class="cta-container">
+                <f:if condition="{data.t3additions_cookienotice_show_more_info}">
+                    <div class="cta-more-info">
+                        <f:link.typolink parameter="{data.t3additions_cookienotice_link}">
+                            <span class="label">{data.t3additions_cookienotice_more_info_label}</span>
+                        </f:link.typolink>
+                    </div>
+                </f:if>
+                <div id="t3additions-cookienotice-accept" class="cta-accept">
+                    <span class="label">{data.t3additions_cookienotice_accept_label}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</f:section>
+
+</html>
