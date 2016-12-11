@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:t3="http://typo3.org/schemas/xliff" version="1.0">
+    <file source-language="en" target-language="de" datatype="plaintext" original="messages" product-name="t3additions">
+        <header/>
+        <body>
+            <!-- Content Element Wizard -->
+            <trans-unit id="ce_wizard.header">
+                <source>Additions</source>
+                <target>Additions</target>
+            </trans-unit>
+
+            <trans-unit id="ce_wizard.menu.title">
+                <source>Menu</source>
+                <target>Menü</target></trans-unit>
+            <trans-unit id="ce_wizard.menu.description">
+                <source>Creates a flexible configurable menu.</source>
+                <target>Erstellt ein flexibles konfigurierbares Menü.</target>
+            </trans-unit>
+            <trans-unit id="ce_wizard.map.title">
+                <source>Map</source>
+                <target>Karte</target></trans-unit>
+            <trans-unit id="ce_wizard.map.description">
+                <source>Creates a flexible configurable map.</source>
+                <target>Erstellt eine flexible konfigurierbare Karte.</target>
+            </trans-unit>
+            <trans-unit id="ce_wizard.socialwall.title">
+                <source>Social Wall</source>
+                <target>Social Wall</target></trans-unit>
+            <trans-unit id="ce_wizard.socialwall.description">
+                <source>Creates a wall for social media posts.</source>
+               <target>Erstellt eine Social Wall für Postings von Facebook.</target>
+            </trans-unit>
+            <trans-unit id="ce_wizard.button.title">
+                <source>Button</source>
+                <target>Button</target></trans-unit>
+            <trans-unit id="ce_wizard.button.description">
+                <source>Creates a simple call to action button.</source>
+                <target>Erstellt einen einfachen Button.</target>
+            </trans-unit>
+            <trans-unit id="ce_wizard.cookienotice.title">
+                <source>Cookie Notice</source>
+                <target>Cookie Hinweis</target></trans-unit>
+            <trans-unit id="ce_wizard.cookienotice.description">
+                <source>Creates a cookie notice.</source>
+                <target>Erstellt einen Cookie Hinweis.</target>
+            </trans-unit>
+
+
+            <!--
+                tt_content
+            -->
+            <!-- Tabs -->
+            <trans-unit id="tt_content.tabs.map.marker">
+                <source>Marker</source>
+                <target>Marker</target>
+            </trans-unit>
+            <trans-unit id="tt_content.tabs.map.advanced">
+                <source>Advanced</source>
+                <target>Erweitert</target>
+            </trans-unit>
+
+            <trans-unit id="tt_content.tabs.socialwall.facebook">
+                <source>Facebook</source>
+                <target>Facebook</target>
+            </trans-unit>
+
+            <!-- Palettes -->
+            <trans-unit id="tt_content.palettes.menu.general">
+                <source>Menu</source>
+                <target>Menü</target>
+            </trans-unit>
+            <trans-unit id="tt_content.palettes.map.general">
+                <source>Map</source>
+                <target>Karte</target>
+            </trans-unit>
+            <trans-unit id="tt_content.palettes.socialwall.general">
+                <source>Social Wall</source>
+                <target>Social Wall</target>
+            </trans-unit>
+            <trans-unit id="tt_content.palettes.button.general">
+                <source>Button</source>
+                <target>Button</target>
+            </trans-unit>
+            <trans-unit id="tt_content.palettes.cookienotice.general">
+                <source>Cookie Notice</source>
+                <target>Cookie Hinweis</target>
+            </trans-unit>
+
+            <!-- Fields -->
+            <trans-unit id="tt_content.fields.menu.depth">
+                <source>Depth</source>
+                <target>Tiefe</target>
+            </trans-unit>
+            <trans-unit id="tt_content.fields.menu.rootpage">
+                <source>Rootpage</source>
+                <target>Einstiegspunkt</target>
+            </trans-unit>
+            <trans-unit id="tt_content.fields.menu.showHidden">
+                <source>Show hidden pages</source>
+                <target>Versteckte Seiten anzeigen</target>
+            </trans-unit>
+            <trans-unit id="tt_content.fields.menu.excludePages">
+                <source>Exclude pages</source>
+                <target>Auszuschließende Seiten</target>
+            </trans-unit>
+
+            <trans-unit id="tt_content.fields.map.centerLat">
+                <source>Center Latitude</source>
+                <target>Breitengrad des Zentrums</target>
+            </trans-unit>
+            <trans-unit id="tt_content.fields.map.centerLng">
+                <source>Center Longitude</source>
+            <target>Längengrad des Zentrums</target></trans-unit>
+                <trans-unit id="tt_content.fields.
+                map.zoom">
+                <source>Zoom</source>
+            <target>Zoom</target></trans-unit>
+            <trans-unit id="tt_content.fields.map.fitBounds">
+                    <source>
+                        Fit Bounds</source>
+            <target>Karte automatisch ausrichten</target></trans-unit>
+            <trans-unit id="tt_content.fields.map.marker">
+                <source>Marker</source>
+                <target>Marker</target>
+            </trans-unit>
+            <trans-unit id="tt_content.fields.map.additionalConf">
+                <source>Additional Configuration</source>
+                <target>Zusätzliche Konfiguration</target>
+            </trans-unit>
+            <trans-unit id="tt_content.fields.map.styles">
+                <source>Styles</source>
+                <target>Darstellungskonfiguration</target>
+            </trans-unit>
+
+            <trans-unit id="tt_content.fields.socialwall.length">
+                <source>Length</source>
+                <target>Länge</target>
+            </trans-unit>
+            <trans-unit id="tt_content.fields.socialwall.showMedia">
+                <source>Show Media</source>
+                <target>Medien anzeigen</target>
+            </trans-unit>
+            <trans-unit id="tt_content.fields.socialwall.facebook_accounts">
+                <source>Accounts</source>
+                <target>Konten</target>
+            </trans-unit>
+            <trans-unit id="tt_content.fields.socialwall.facebook_limit">
+                <source>Limit</source>
+                <target>Limit</target>
+            </trans-unit>
+            <trans-unit id="tt_content.fields.socialwall.facebook_accessToken">
+                <source>Access Token</source>
+                <target>Zugriffstoken</target>
+            </trans-unit>
+
+            <trans-unit id="tt_content.fields.button.label">
+                <source>Label</source>
+                <target>Beschriftung</target>
+            </trans-unit>
+            <trans-unit id="tt_content.fields.button.link">
+                <source>Link</source>
+                <target>Link</target>
+            </trans-unit>
+
+            <trans-unit id="tt_content.fields.cookienotice.message">
+                <source>Message</source>
+                <target>Nachricht</target>
+            </trans-unit>
+            <trans-unit id="tt_content.fields.cookienotice.acceptLabel">
+                <source>Accept Label</source>
+            <target>Beschriftung des Akzeptieren Buttons</target>
+            </trans-unit>
+            <trans-unit id="tt_content.fields.cookienotice.moreInfoLabel">
+                <source>More Info Label</source>
+                <target>Beschriftung des Mehr Infos Buttons</target>
+            </trans-unit>
+            <trans-unit id="tt_content.fields.cookienotice.showMoreInfo">
+                <source>Show More Info Button</source>
+                <target>Mehr Infos Button anzeigen</target>
+            </trans-unit>
+            <trans-unit id="tt_content.fields.cookienotice.link">
+                <source>More Info Link</source>
+                <target>Mehr Infos Link</target>
+            </trans-unit>
+
+
+            <!--
+                Marker
+            -->
+            <trans-unit id="marker.title">
+                <source>Marker</source>
+                <target>Marker</target>
+            </trans-unit>
+            <trans-unit id="marker.description">
+                <source>A Marker for Google Maps.</source>
+                <target>Ein Marker für die Karte.</target>
+            </trans-unit>
+            <trans-unit id="marker.field.title">
+                <source>Title</source>
+                <target>Titel</target>
+            </trans-unit>
+            <trans-unit id="marker.field.lat">
+                <source>Latitude</source>
+                <target>Breitengrad</target>
+            </trans-unit>
+            <trans-unit id="marker.field.lng">
+                <source>Longitude</source>
+                <target>Längengrad</target>
+            </trans-unit>
+            <trans-unit id="marker.field.uri">
+                <source>Link</source>
+                <target>Link</target>
+            </trans-unit>
+            <trans-unit id="marker.field.uriTitle">
+                <source>Link title</source>
+                <target>Linktitel</target>
+            </trans-unit>
+            <trans-unit id="marker.field.icon">
+                <source>Icon</source>
+                <target>Icon</target>
+            </trans-unit>
+            <trans-unit id="marker.field.description">
+                <source>Description</source>
+                <target>Beschreibung</target>
+            </trans-unit>
+
+            <!--
+                Sys File Reference
+            -->
+            <trans-unit id="sys_file_reference.map.normalWidth">
+                <source>Width</source>
+                <target>Breite</target>
+            </trans-unit>
+            <trans-unit id="sys_file_reference.map.normalHeight">
+                <source>Height</source>
+                <target>Höhe</target>
+            </trans-unit>
+            <trans-unit id="sys_file_reference.map.scaledWidth">
+                <source>Scaled width</source>
+                <target>Skalierte Breite</target>
+            </trans-unit>
+            <trans-unit id="sys_file_reference.map.scaledHeight">
+                <source>Scaled height</source>
+                <target>Skalierte Höhe</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
