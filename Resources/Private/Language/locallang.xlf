@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
-	<file source-language="en" datatype="plaintext" original="messages" date="2014-02-07T20:22:32Z" product-name="t3additions">
+<xliff xmlns:t3="http://typo3.org/schemas/xliff" version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" product-name="t3additions">
 		<header/>
 		<body>
 			<trans-unit id="staticFile.description">
