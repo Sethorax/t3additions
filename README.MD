@@ -1,7 +1,7 @@
-# T3additions - Typo3 Extension
+# TYPO3 Extension - ``t3additions``
 
 #### Introduction
-This extension brings some additions to the already wonderful TYPO3 CMS. The idea behind this extension was to add more content elements for content that is often used in a standard web project.
+The goal of this extension is to bring some more additions in form of additional content elements to TYPO3.
 
 #### Dependencies
 - Typo3 7.6.X
