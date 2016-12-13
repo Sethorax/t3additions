@@ -3,7 +3,6 @@ var t3additionsSocialwall = {
 
     init: function () {
         this._loadConfig();
-        console.log(this.config);
         this._initSocialFeedPlugin();
     },
 
@@ -50,7 +49,7 @@ var t3additionsSocialwall = {
             media_min_width: 0,
             template_html: itemTemplate,
             callback: function () {
-                console.log('finished');
+
             }
         })
     },
