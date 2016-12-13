@@ -1,24 +1,25 @@
-lib.fluidContent {
+lib.t3additionsContent = FLUIDTEMPLATE
+lib.t3additionsContent {
     templateRootPaths {
-        570 = EXT:t3additions/Resources/Private/Templates/
+        0 = EXT:t3additions/Resources/Private/Templates/
     }
 
     partialRootPaths {
-        570 = EXT:t3additions/Resources/Private/Partials/
+        0 = EXT:t3additions/Resources/Private/Partials/
     }
 
     layoutRootPaths {
-        570 = EXT:t3additions/Resources/Private/Layouts/
+        0 = EXT:t3additions/Resources/Private/Layouts/
     }
 }
 
 tt_content {
-    t3additions_menu =< lib.fluidContent
+    t3additions_menu =< lib.t3additionsContent
     t3additions_menu {
         templateName = Menu
     }
 
-    t3additions_map =< lib.fluidContent
+    t3additions_map =< lib.t3additionsContent
     t3additions_map {
         templateName = Map
         dataProcessing {
@@ -26,17 +27,17 @@ tt_content {
         }
     }
 
-    t3additions_socialwall =< lib.fluidContent
+    t3additions_socialwall =< lib.t3additionsContent
     t3additions_socialwall {
         templateName = Socialwall
     }
 
-    t3additions_button =< lib.fluidContent
+    t3additions_button =< lib.t3additionsContent
     t3additions_button {
         templateName = Button
     }
 
-    t3additions_cookienotice =< lib.fluidContent
+    t3additions_cookienotice =< lib.t3additionsContent
     t3additions_cookienotice {
         templateName = Cookienotice
     }
