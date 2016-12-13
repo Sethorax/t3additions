@@ -8,7 +8,7 @@
 
 <!-- Renders a default menu with ul>li strucutre -->
 <f:section name="default">
-    <a:includeJSLib name="jQuery" path="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" />
+    <a:includeJSLib name="jQuery" uri="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" />
 
     <a:includeRelFile file="Resources/Public/JavaScript/Socialwall/socialwall.js" type="js" />
     <a:includeRelFile file="Resources/Public/JavaScript/Socialwall/socialwall-lib.js" type="js" />
@@ -17,11 +17,11 @@
     <div class="t3additions-socialwall socialwall-layout-default"
         data-socialwall-config="{a:convertToBase64(data: '{
             length: \'{data.t3additions_socialwall_length}\',
-            showMedia: \'{data.t3additions_socialwall_showMedia}\',
+            showMedia: \'{data.t3additions_socialwall_show_media}\',
             facebook: {
                 accounts: \'{data.t3additions_socialwall_facebook_accounts}\',
                 limit: \'{data.t3additions_socialwall_facebook_limit}\',
-                accessToken: \'{data.t3additions_socialwall_facebook_accessToken}\'
+                accessToken: \'{data.t3additions_socialwall_facebook_access_token}\'
             }
         }')}">
         <div class="sw-holder"></div>
