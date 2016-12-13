@@ -119,18 +119,35 @@ var t3additionsMap = {
     },
 
     _loadConfig: function (uid, cb) {
-        var self = this;
+        var self = this,
+            base;
 
-        $.ajax('http://typo3-forge.dev/index.php?type=5711&uid=' + uid)
-            .done(function (result) {
-                if (!result.error) {
-                    self.config[uid] = result;
-                    cb(true);
-                } else {
-                    console.error('Error parsing map properties!');
-                    cb(false);
-                }
-            });
+        if ($('base').length > 0) {
+            base = $('base').attr('href');
+
+            if (base.indexOf('/', base.length - 1) === -1) {
+                base += '/';
+            }
+
+            if (base.substring(0, 4) !== 'http' || base.substring(0, 2) !== '//') {
+                base = '//' + base;
+            }
+
+
+            $.ajax(base + 'index.php?type=5711&uid=' + uid)
+                .done(function (result) {
+                    if (!result.error) {
+                        self.config[uid] = result;
+                        cb(true);
+                    } else {
+                        console.error('Error parsing map properties!');
+                        cb(false);
+                    }
+                });
+        } else {
+            console.error('<base> element not found! Please set page.config.baseURL in TypoScript!');
+            cb(false);
+        }
     },
 
     _waitForGMaps: function (cb) {
