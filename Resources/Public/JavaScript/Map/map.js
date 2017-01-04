@@ -3,16 +3,16 @@ var t3additionsMap = {
 
     waitForDom: function () {
         if (document.readyState !== 'loading') {
-            this.init();
+            t3additionsMap.init();
         } else {
-            document.addEventListener('DOMContentLoaded', this.init);
+            document.addEventListener('DOMContentLoaded', t3additionsMap.init);
         }
     },
 
     init: function () {
-        var self = this;
+        var self = t3additionsMap;
 
-        this._waitForGMaps(function () {
+        t3additionsMap._waitForGMaps(function () {
             $('.t3additions-map').each(function () {
                 var element = this;
                 var uid = $(this).attr('data-uid');
@@ -27,7 +27,7 @@ var t3additionsMap = {
     },
 
     setupMap: function (mapContainer, uid) {
-        var config = this.config[uid];
+        var config = t3additionsMap.config[uid];
 
         config.map = new google.maps.Map($(mapContainer).get()[0], {
             center: {
@@ -54,7 +54,7 @@ var t3additionsMap = {
 
         config.bounds = new google.maps.LatLngBounds();
 
-        this.addMarkers(config, uid);
+        t3additionsMap.addMarkers(config, uid);
     },
 
     addMarkers: function (config) {
@@ -119,7 +119,7 @@ var t3additionsMap = {
     },
 
     _loadConfig: function (uid, cb) {
-        var self = this,
+        var self = t3additionsMap,
             base;
 
         if ($('base').length > 0) {

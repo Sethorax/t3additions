@@ -2,13 +2,13 @@ var t3additionsSocialwall = {
     config: {},
 
     init: function () {
-        this._loadConfig();
-        this._initSocialFeedPlugin();
+        t3additionsSocialwall._loadConfig();
+        t3additionsSocialwall._initSocialFeedPlugin();
     },
 
     _loadConfig: function () {
         try {
-            this.config = JSON.parse(window.atob($('.t3additions-socialwall').attr('data-socialwall-config')));
+            t3additionsSocialwall.config = JSON.parse(window.atob($('.t3additions-socialwall').attr('data-socialwall-config')));
         } catch (e) {
             console.error('Error parsing configuration: ', e);
         }

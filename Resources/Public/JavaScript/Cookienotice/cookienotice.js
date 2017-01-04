@@ -3,21 +3,21 @@ var t3additionsCookienotice = {
 
     waitForDom: function () {
         if (document.readyState !== 'loading') {
-            this.init();
+            t3additionsCookienotice.init();
         } else {
-            document.addEventListener('DOMContentLoaded', this.init);
+            document.addEventListener('DOMContentLoaded', t3additionsCookienotice.init);
         }
     },
 
     init: function () {
-        if (!this._wasAlreadyAccepted()) {
-            this._showCookiebar();
-            this._bindEvents();
+        if (!t3additionsCookienotice._wasAlreadyAccepted()) {
+            t3additionsCookienotice._showCookiebar();
+            t3additionsCookienotice._bindEvents();
         }
     },
 
     _wasAlreadyAccepted: function () {
-        return document.cookie.indexOf(this._cookieName) > -1;
+        return document.cookie.indexOf(t3additionsCookienotice._cookieName) > -1;
 
     },
 

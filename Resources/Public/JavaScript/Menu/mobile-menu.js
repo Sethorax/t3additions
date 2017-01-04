@@ -3,12 +3,12 @@ var t3additionsMenu = {
     _selector: '.t3additions-menu.menu-layout-mobile',
 
     init: function () {
-        if (!this._isInitialized) {
-            this._openActiveSubmenus();
-            this._calculateSubmenuHeights();
-            this._bindEvents();
+        if (!t3additionsMenu._isInitialized) {
+            t3additionsMenu._openActiveSubmenus();
+            t3additionsMenu._calculateSubmenuHeights();
+            t3additionsMenu._bindEvents();
 
-            this._isInitialized = true;
+            t3additionsMenu._isInitialized = true;
         }
     },
 
@@ -23,21 +23,21 @@ var t3additionsMenu = {
     },
 
     _bindEvents: function () {
-        $(this._selector).find('.btn-open').on('click', function () {
+        $(t3additionsMenu._selector).find('.btn-open').on('click', function () {
             $(this).closest('.menu-item').toggleClass('state-open');
         });
     },
 
     _calculateSubmenuHeights: function () {
-        $(this._selector).find('.submenu').each(function () {
+        $(t3additionsMenu._selector).find('.submenu').each(function () {
             $(this).css('max-height', $(this).outerHeight());
         });
         
-        $(this._selector).addClass('state-loaded');
+        $(t3additionsMenu._selector).addClass('state-loaded');
     },
 
     _openActiveSubmenus: function () {
-        var curItem = $(this._selector).find('.menu-item.current').closest('.menu-list');
+        var curItem = $(t3additionsMenu._selector).find('.menu-item.current').closest('.menu-list');
         var curParentMenu = null;
 
         for (var i = 0; i < (curItem.attr('data-menu-level') - 1); i++) {
