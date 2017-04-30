@@ -1,5 +1,9 @@
 # TYPO3 Extension - ``t3additions``
 
+## DEPRECATED
+This extension is deprecated and no longer maintained!  
+If you look for a way to extend TYPO3's content elements, take a look at dynamic content element extensions like [DCE](https://bitbucket.org/ArminVieweg/dce/overview) or [fluidcontent](https://github.com/FluidTYPO3/fluidcontent)!
+
 #### Introduction
 The goal of this extension is to bring some more additions in form of additional content elements to TYPO3.
 
